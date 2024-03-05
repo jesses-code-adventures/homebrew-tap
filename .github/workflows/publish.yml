@@ -1,11 +1,12 @@
 name: brew pr-pull
 on:
-  pull_request_target:
+  workflow_run:
+    workflows: ["brew test-bot"]
     types:
-      - labeled
+      - completed
 jobs:
   pr-pull:
-    if: contains(github.event.pull_request.labels.*.name, 'pr-pull')
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-22.04
     permissions:
       contents: write
