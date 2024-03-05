@@ -1,8 +1,8 @@
 class Excavator < Formula
   desc "Tui application for managing and re-exporting audio samples"
   homepage "https://github.com/jesses-code-adventures/excavator"
-  url "https://github.com/jesses-code-adventures/excavator/archive/refs/tags/v0.0.17-lw.tar.gz"
-  sha256 "4514915ed7df06162bbb5b25aafbfd4253f585620467a3d28e1cdf266f23a4c2"
+  url "https://github.com/jesses-code-adventures/excavator/archive/refs/tags/v0.0.18-lw.tar.gz"
+  sha256 "105c429a51a7214af1c54b713ef2c6c9c0979c185f15472f461f3353dfbb4fa8"
   license "MIT"
 
   depends_on "go" => :build
