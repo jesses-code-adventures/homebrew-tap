@@ -5,7 +5,6 @@ class Excavator < Formula
   sha256 "59a82f0e8eb2efc282603cc3c98896cff85fe44cb98987b3578d9150c3c5ecff"
   license "MIT"
 
-
   test do
     system "#{bin}/excavator", "--version"
   end
