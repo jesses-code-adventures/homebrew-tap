@@ -10,6 +10,6 @@ Or `brew tap jesses-code-adventures/tap` and then `brew install <formula>`.
 
 `brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
 
-## Create new formula instructions
+## Create new formula instructions like this
 
 https://brew.sh/2020/11/18/homebrew-tap-with-bottles-uploaded-to-github-releases/
