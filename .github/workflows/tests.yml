@@ -33,7 +33,7 @@ jobs:
               if [ "${{ runner.os }}" = "macOS" ]; then
                 export HOMEBREW_NO_INSTALL_FROM_API=1
               fi
-              brew test-bot --only--formulae
+              brew test-bot --only-formulae
         shell: bash
 
       - name: Upload bottles as artifact
