@@ -29,12 +29,7 @@ jobs:
       - run: brew test-bot --only-tap-syntax
 
       - name: "only formulae"
-        run: |
-              if [ "${{ runner.os }}" = "macOS" ]; then
-                export HOMEBREW_NO_INSTALL_FROM_API=1
-              fi
-              brew test-bot --only-formulae
-        shell: bash
+        run: brew test-bot --only-formulae
 
       - name: Upload bottles as artifact
         if: always() && github.event_name == 'pull_request'
